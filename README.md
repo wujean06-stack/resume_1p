@@ -1,2 +1,2 @@
-﻿# myResume.html
+﻿# index.html
 # resume_1p
