@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>個人履歷</title>
+
+<style>
+
+body{
+    font-family: "Microsoft JhengHei", sans-serif;
+    background:#f4f6f8;
+    margin:0;
+}
+
+.container{
+    width:800px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.header{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.header h1{
+    margin:5px;
+}
+
+.section{
+    margin-top:25px;
+}
+
+.section h2{
+    border-left:5px solid #4a90e2;
+    padding-left:10px;
+}
+
+button{
+    margin-top:20px;
+    padding:10px 15px;
+    border:none;
+    background:#4a90e2;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#357ABD;
+}
+
+.hidden{
+    display:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<h1>吳佳君</h1>
+<p>亞洲大學 聽力暨語言治療學系</p>
+<p>學號：AU114018054</p>
+</div>
+
+<div class="section">
+<h2>基本資料</h2>
+<ul>
+<li>Email：wujean06@gmail.com</li>
+<li>所在地：台灣</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>學歷</h2>
+<p>亞洲大學 聽力暨語言治療學系</p>
+<p>2025 - 至今</p>
+</div>
+
+<div class="section">
+<h2>專長</h2>
+<ul>
+<li>口語表達能力評估</li>
+<li>溝通技巧</li>
+<li>基礎心理學</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>自我介紹</h2>
+<p id="intro">
+我目前就讀於亞洲大學聽力暨語言治療學系，
+對語言發展、溝通能力及相關臨床領域具有濃厚興趣。
+</p>
+
+<button onclick="toggleIntro()">顯示 / 隱藏自我介紹</button>
+
+</div>
+
+</div>
+
+<script>
+
+function toggleIntro(){
+    var intro = document.getElementById("intro");
+
+    if(intro.classList.contains("hidden")){
+        intro.classList.remove("hidden");
+    }else{
+        intro.classList.add("hidden");
+    }
+}
+
+</script>
+
+</body>
+</html>
