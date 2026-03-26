@@ -1,185 +1,57 @@
-<!DOCTYPE html>
-<html lang="zh-TW">
-<head>
-<meta charset="UTF-8">
-<title>個人履歷 - 吳佳君</title>
-
-<style>
-    body {
-        font-family: "Microsoft JhengHei", "PingFang TC", sans-serif;
-        background: #f0f2f5;
-        margin: 0;
-        color: #333;
-    }
-
-    .container {
-        width: 850px;
-        margin: 40px auto;
-        background: white;
-        padding: 40px;
-        border-radius: 15px;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    /* 左側欄位：照片與聯絡資訊 */
-    .sidebar {
-        flex: 1;
-        min-width: 250px;
-        border-right: 1px solid #eee;
-        padding-right: 30px;
-    }
-
-    /* 照片樣式 */
-    .profile-photo {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-        object-fit: cover;
-        display: block;
-        margin: 0 auto 20px;
-        border: 4px solid #4a90e2;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-
-    /* 右側主內容 */
-    .main-content {
-        flex: 2;
-        padding-left: 40px;
-    }
-
-    .header h1 {
-        margin: 0;
-        font-size: 32px;
-        color: #2c3e50;
-    }
-
-    .header p {
-        color: #7f8c8d;
-        font-size: 18px;
-        margin: 5px 0 20px 0;
-    }
-
-    .section {
-        margin-bottom: 30px;
-    }
-
-    .section h2 {
-        font-size: 20px;
-        color: #4a90e2;
-        border-bottom: 2px solid #4a90e2;
-        padding-bottom: 5px;
-        margin-bottom: 15px;
-    }
-
-    ul {
-        padding-left: 20px;
-        line-height: 1.8;
-    }
-
-    .info-list {
-        list-style: none;
-        padding: 0;
-    }
-
-    .info-list li {
-        margin-bottom: 10px;
-        font-size: 14px;
-    }
-
-    .info-list strong {
-        display: inline-block;
-        width: 60px;
-        color: #555;
-    }
-
-    button {
-        background: #4a90e2;
-        color: white;
-        border: none;
-        padding: 8px 16px;
-        border-radius: 20px;
-        cursor: pointer;
-        font-size: 13px;
-        transition: 0.3s;
-    }
-
-    button:hover {
-        background: #357ABD;
-    }
-
-    .hidden {
-        display: none;
-    }
-
-    @media print {
-        button { display: none; }
-        .container { box-shadow: none; margin: 0; width: 100%; }
-    }
-</style>
-</head>
-
-<body>
-
 <div class="container">
-    
+
+    <!-- 左側粉色欄 -->
     <div class="sidebar">
-        <img src="獨角獸.jpg" alt="個人照" class="profile-photo">
         
-        <div class="section">
-            <h2>聯絡資訊</h2>
-            <ul class="info-list">
-                <li><strong>Email</strong> wujean06@gmail.com</li>
-                <li><strong>所在地</strong> 台灣</li>
-                <li><strong>學號</strong> AU114018054</li>
-            </ul>
+        <!-- 六角形照片 -->
+        <div class="hexagon">
+            <img src="images/yourphoto.jpg" alt="個人照">
         </div>
 
-        <div class="section">
-            <h2>專長技能</h2>
-            <ul>
-                <li>口語表達能力評估</li>
-                <li>溝通技巧</li>
-                <li>基礎心理學</li>
-            </ul>
-        </div>
+        <h2>聯絡資訊</h2>
+        <ul class="info-list">
+            <li>📧 wujean06@gmail.com</li>
+            <li>📍 台灣</li>
+            <li>🎓 AU114018054</li>
+        </ul>
+
+        <h2>專長</h2>
+        <ul>
+            <li>語言發展評估</li>
+            <li>溝通技巧</li>
+            <li>基礎心理學</li>
+        </ul>
+
     </div>
 
+    <!-- 右側內容 -->
     <div class="main-content">
-        <div class="header">
-            <h1>吳佳君</h1>
-            <p>亞洲大學 聽力暨語言治療學系</p>
-        </div>
 
-        <div class="section">
-            <h2>學歷進程</h2>
-            <p><strong>亞洲大學</strong> 聽力暨語言治療學系</p>
-            <p style="color: #7f8c8d;">2025 - 至今</p>
+        <h1>吳佳君</h1>
+        <h3>亞洲大學 聽力暨語言治療學系</h3>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="dot"></div>
+                <div class="content">
+                    <h3>亞洲大學</h3>
+                    <p>聽力暨語言治療學系</p>
+                    <span>2025 - 至今</span>
+                </div>
+            </div>
+
         </div>
 
         <div class="section">
             <h2>自我介紹</h2>
-            <p id="intro">
-                我目前就讀於亞洲大學聽力暨語言治療學系，專注於語言發展與溝通能力的學術研究。
-                我對於臨床治療領域具有濃厚興趣，致力於透過專業知識幫助有溝通障礙的個體改善生活品質。
+            <p>
+            我目前就讀於亞洲大學聽力暨語言治療學系，
+            對語言發展與溝通能力具有高度興趣，
+            期望未來投入臨床治療領域。
             </p>
-            <button onclick="toggleIntro()">顯示 / 隱藏內容</button>
         </div>
+
     </div>
 
 </div>
-
-<script>
-    function toggleIntro(){
-        var intro = document.getElementById("intro");
-        if(intro.classList.contains("hidden")){
-            intro.classList.remove("hidden");
-        } else {
-            intro.classList.add("hidden");
-        }
-    }
-</script>
-
-</body>
-</html>
