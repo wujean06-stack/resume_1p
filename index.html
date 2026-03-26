@@ -1,57 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>個人履歷 - 吳佳君</title>
+
+<style>
+
+body{
+    font-family: "Microsoft JhengHei","PingFang TC";
+    margin:0;
+    background:#f5f6fa;
+}
+
+/* 整體 */
+.container{
+    width:900px;
+    margin:40px auto;
+    background:white;
+    display:flex;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* 左側 */
+.sidebar{
+    width:320px;
+    background:#e89a9a;
+    color:white;
+    padding:40px 30px;
+    position:relative;
+}
+
+/* 六角形照片 */
+.hexagon{
+    width:170px;
+    height:170px;
+    margin:auto;
+    margin-bottom:20px;
+
+    clip-path: polygon(
+        25% 5%,
+        75% 5%,
+        100% 50%,
+        75% 95%,
+        25% 95%,
+        0% 50%
+    );
+
+    overflow:hidden;
+    border:6px solid white;
+}
+
+.hexagon img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* 左側標題 */
+.sidebar h2{
+    font-size:18px;
+    margin-top:25px;
+    border-bottom:2px solid rgba(255,255,255,0.5);
+    padding-bottom:5px;
+}
+
+/* 左側列表 */
+.sidebar ul{
+    list-style:none;
+    padding:0;
+    line-height:1.8;
+}
+
+/* 右側 */
+.main{
+    flex:1;
+    padding:50px;
+}
+
+/* 名字 */
+.name{
+    font-size:32px;
+    color:#5b6ea6;
+    font-weight:bold;
+}
+
+.title{
+    color:#888;
+    margin-bottom:30px;
+}
+
+/* 區塊標題 */
+.section-title{
+    color:#5b6ea6;
+    border-bottom:2px solid #5b6ea6;
+    padding-bottom:5px;
+    margin-top:25px;
+}
+
+/* 時間軸 */
+.timeline{
+    margin-top:20px;
+    border-left:3px solid #5b6ea6;
+    padding-left:20px;
+}
+
+.timeline-item{
+    position:relative;
+    margin-bottom:25px;
+}
+
+.dot{
+    width:14px;
+    height:14px;
+    background:#5b6ea6;
+    border-radius:50%;
+    position:absolute;
+    left:-28px;
+    top:5px;
+}
+
+/* 技能圖示區 */
+.skill-icons{
+    display:flex;
+    gap:20px;
+    margin-top:10px;
+}
+
+.skill{
+    text-align:center;
+    font-size:14px;
+}
+
+.skill-circle{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:#f1f3ff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:auto;
+    font-size:22px;
+}
+
+</style>
+</head>
+
+<body>
+
 <div class="container">
 
-    <!-- 左側粉色欄 -->
-    <div class="sidebar">
-        
-        <!-- 六角形照片 -->
-        <div class="hexagon">
-            <img src="images/yourphoto.jpg" alt="個人照">
-        </div>
+<!-- 左側 -->
+<div class="sidebar">
 
-        <h2>聯絡資訊</h2>
-        <ul class="info-list">
-            <li>📧 wujean06@gmail.com</li>
-            <li>📍 台灣</li>
-            <li>🎓 AU114018054</li>
-        </ul>
+<div class="hexagon">
+<img src="images/photo.jpg">
+</div>
 
-        <h2>專長</h2>
-        <ul>
-            <li>語言發展評估</li>
-            <li>溝通技巧</li>
-            <li>基礎心理學</li>
-        </ul>
+<h2>聯絡資訊</h2>
 
-    </div>
+<ul>
+<li>📧 wujean06@gmail.com</li>
+<li>📍 台灣</li>
+<li>🎓 AU114018054</li>
+</ul>
 
-    <!-- 右側內容 -->
-    <div class="main-content">
+<h2>專長</h2>
 
-        <h1>吳佳君</h1>
-        <h3>亞洲大學 聽力暨語言治療學系</h3>
-
-        <div class="timeline">
-
-            <div class="timeline-item">
-                <div class="dot"></div>
-                <div class="content">
-                    <h3>亞洲大學</h3>
-                    <p>聽力暨語言治療學系</p>
-                    <span>2025 - 至今</span>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="section">
-            <h2>自我介紹</h2>
-            <p>
-            我目前就讀於亞洲大學聽力暨語言治療學系，
-            對語言發展與溝通能力具有高度興趣，
-            期望未來投入臨床治療領域。
-            </p>
-        </div>
-
-    </div>
+<ul>
+<li>語言發展評估</li>
+<li>溝通技巧</li>
+<li>基礎心理學</li>
+</ul>
 
 </div>
+
+<!-- 右側 -->
+<div class="main">
+
+<div class="name">吳佳君</div>
+
+<div class="title">
+亞洲大學 聽力暨語言治療學系
+</div>
+
+<div class="section-title">
+學歷
+</div>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<div class="dot"></div>
+
+<strong>亞洲大學</strong><br>
+聽力暨語言治療學系<br>
+<small>2025 - 至今</small>
+
+</div>
+
+</div>
+
+
+<div class="section-title">
+自我介紹
+</div>
+
+<p>
+我目前就讀於亞洲大學聽力暨語言治療學系，
+對語言發展與溝通能力具有高度興趣，
+希望未來投入臨床治療領域，
+幫助有溝通困難的人提升生活品質。
+</p>
+
+
+<div class="section-title">
+技能
+</div>
+
+<div class="skill-icons">
+
+<div class="skill">
+<div class="skill-circle">🧠</div>
+心理
+</div>
+
+<div class="skill">
+<div class="skill-circle">💬</div>
+溝通
+</div>
+
+<div class="skill">
+<div class="skill-circle">📊</div>
+評估
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</body>
+</html>
