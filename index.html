@@ -3,6 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <title>個人履歷 - 吳佳君</title>
+    <audio controls>
+  <source src="mp3/bg.mp3" type="audio/mp3">
+  <source src="bg.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
 
 <style>
 
@@ -243,23 +248,5 @@ body{
 </div>
 
 </body>
-   <audio id="bgm" autoplay loop playsinline>
-  <source src="bg.mp3" type="audio/mpeg">
-</audio>
-
-<script>
-  const audio = document.getElementById("bgm");
-
-  // 嘗試直接播放
-  audio.play().catch(() => {
-    // 若被擋，快速解除靜音再播放
-    audio.muted = true;
-    audio.play();
-
-    setTimeout(() => {
-      audio.muted = false;
-    }, 100);
-  });
-</script>
-
+  
 </html>
