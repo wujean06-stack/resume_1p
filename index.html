@@ -39,11 +39,11 @@ body {
 
 /* 圓形照片框設定 */
 .profile-frame {
-    width: 130px;        /* 縮小後的容器寬度 */
-    height: 130px;       /* 縮小後的容器高度 */
+    width: 130px;
+    height: 130px;
     margin: 0 auto 25px;
-    background: white;    /* 框內背景色 */
-    border-radius: 50%;  /* 關鍵：轉為圓形 */
+    background: white;
+    border-radius: 50%;
     border: 4px solid white;
     display: flex;
     align-items: center;
@@ -53,13 +53,12 @@ body {
 }
 
 .profile-frame img {
-    width: 90%;          /* 照片縮小至框內的 90% */
+    width: 90%;
     height: 90%;
-    object-fit: contain; /* 確保照片完整縮放不被切掉 */
+    object-fit: contain;
     border-radius: 50%;
 }
 
-/* 左側標題與列表 */
 .sidebar h2 {
     font-size: 18px;
     margin-top: 25px;
@@ -98,7 +97,7 @@ body {
     font-weight: bold;
 }
 
-/* 時間軸 */
+/* 時間軸樣式 */
 .timeline {
     margin-top: 20px;
     border-left: 3px solid #5b6ea6;
@@ -118,6 +117,13 @@ body {
     position: absolute;
     left: -28.5px;
     top: 5px;
+}
+
+.experience-desc {
+    font-size: 14.5px;
+    color: #555;
+    margin-top: 5px;
+    line-height: 1.6;
 }
 
 /* 技能圖示 */
@@ -181,6 +187,25 @@ body {
                 <strong>亞洲大學</strong><br>
                 聽力暨語言治療學系<br>
                 <small>2025 - 至今</small>
+            </div>
+        </div>
+
+        <div class="section-title">活動參與經歷</div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="dot"></div>
+                <strong>聽語週</strong><br>
+                <div class="experience-desc">
+                    擔任聽語週手作組主持人，學習控制活動進行的時間，在大家面前表達與引導流程進行。
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="dot"></div>
+                <strong>聽語營</strong><br>
+                <div class="experience-desc">
+                    在聽語營中擔任美宣組，共同製作道具與相關物件，使活動能順利進行，同時也培養與他人共事、溝通的能力。
+                </div>
             </div>
         </div>
 
